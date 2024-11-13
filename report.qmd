@@ -1,0 +1,21 @@
+---
+title: "Reprex for quarto 1.6.30"
+format:
+  pdf:
+    papersize: a4
+    toc: true
+    number-sections: true
+    colorlinks: true
+    pdf-engine: latexmk
+    pdf-engine-opt: -xelatex
+---
+
+This is a simple document to demonstrate issues seen with pdf generation in quarto 1.6.30 with markdown figures. Scaling issues also seen if images are in a figure block with `layout-ncol`. 
+
+\newpage
+## Single image
+![Fig 1](assets/analyst-collaboration.png) 
+
+\newpage
+## Single image with width change
+![Fig 1](assets/analyst-collaboration.png){width=30%}
